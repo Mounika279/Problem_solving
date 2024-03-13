@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btnn{
+            height:20px;
+            width:20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+//         function add(a,b){
+//     return a+b
+// }
+// console.log(add(10,20))
+// function min(a){
+//   return b=a*60
+// }
+// console.log(min(3))
+// function incr(i){
+//     return a=i+1;
+// }
+// console.log(incr(5))
+// function years(a){
+//     return b=a*365;
+// }
+// console.log(years(2));
+
+// function power(voltage,current){
+//     return voltage*current
+// }
+// console.log(power(10,10))
+
+// function stg(a){
+//     return "hello" + " " +a+ "!!" 
+// }
+// console.log(stg("mounika"))
+
+
+// function strg(a,b){
+//     return a===b
+// }
+// console.log(strg("mounik","mounika"))
+
+// var c=(name)=>{
+//     return "hello" +name+ "world"
+// }
+// console.log(c("mounika"))
+
+// const screenWidth = screen.width;
+// console.log("Screen width: " + screenWidth);
+
+
+// const screenHeight = screen.height;
+// console.log("Screen height: " + screenHeight);
+
+// const screenavailHeight = screen.availHeight;
+// console.log("Screen  avail Height: " + screenavailHeight);
+
+// const screenavailWidth = screen.availWidth;
+// console.log("Screen  avail width: " + screenavailWidth);
+
+// const screencolorDepth = screen.colorDepth;
+// console.log("screen.colorDepth: " + screen.colorDepth);
+
+
+// const screenpixelDepth = screen.pixelDepth;
+// console.log("screen.pixelDepth: " + screen.pixelDepth);
+
+var btn=document.createElement("button");
+btn.setAttribute("class","btnn")
+btn.innerText="open";
+document.body.appendChild(btn)
+
+btn.addEventListener("click",()=>{
+    window.moveBy(1000, 500);
+
+})
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

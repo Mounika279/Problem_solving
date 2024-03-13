@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem solving</title>
+</head>
+<body>
+    <script>
+    //     for (let num = 2; num <= 49; num++) {
+    // let isPrime = true; // Initialize isPrime to true for each num
+    
+    // Check if num is divisible by any number other than 1 and itself
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+    
+//     // If isPrime is still true after the loop, num is prime
+//     if (isPrime) {
+//         console.log(num);
+//     }
+// }
+
+//sum of prime numbers from 1 to 50
+// let sum=0
+// for(let num=2;num<=49;num++){
+//     let isprime=true
+
+// for( let i=2;i<num;i++){
+//     if(num%i===0){
+//  isprime=false;
+//         break
+//     }
+// }
+// if(isprime){
+//     sum=sum+num
+   
+// }
+// }
+// console.log(sum)
+
+//program to print the sum of all prime digit in a number
+
+// var a = 46732;
+// var s = 0;
+// var b = a.toString();
+
+// for (var i = 0; i < b.length; i++) {
+//     var c = 0;
+//     var digit = parseInt(b[i]); // Convert the character digit to an integer
+
+//     for (var j = 2; j <= digit / 2; j++) {
+//         if (digit % j === 0) {
+//             c = 1;
+//             break;
+//         }
+//     }
+
+//     if (c === 0 && digit > 1) {
+//         s += digit; // Add the prime digit to the sum
+//     }
+// }
+
+// console.log("Sum of prime digits: " + s);
+
+//program to print the prime number in ascending order
+
+// var a = 46732;
+// var s = 0;
+// var b = a.toString();
+// var primedigits=""
+
+// for (var i = 0; i < b.length; i++) {
+//     var c = 0;
+//     var digit = parseInt(b[i]); // Convert the character digit to an integer
+
+//     for (var j = 2; j <= digit / 2; j++) {
+//         if (digit % j === 0) {
+//             c = 1;
+//             break;
+//         }
+//     }
+
+//     if (c === 0 && digit > 1) {
+//        primedigits+=digit
+//     }
+// }
+// console.log("Primedigit in descending order",primedigits)
+
+//in descending order
+// var a = 46732;
+// var b = a.toString();
+// var primeDigits = "";
+
+// for (var i = 0; i < b.length; i++) {
+//     var c = 0;
+//     var digit = parseInt(b[i]); // Convert the character digit to an integer
+
+//     for (var j = 2; j <= digit / 2; j++) {
+//         if (digit % j === 0) {
+//             c = 1;
+//             break;
+//         }
+//     }
+
+//     if (c === 0 && digit > 1) {
+//        primeDigits = digit + primeDigits; // Concatenate the prime digit to the beginning of the string
+//     }
+// }
+
+// console.log("primedigits in ascending order",primeDigits); 
+//sum of numbers
+// var a=[27,30,8,10]
+// var s=0;
+// for(i=0;i<a.length;i++){
+//   s=s+a[i]
+// }
+// console.log(a.join("+")+"="+s)
+//checking number are in ascending or not
+// var a = [45,671,349];
+// Count=0;
+// for(i=0;i<a.length;i++){
+//     var num=a[i]
+//     var digits=num.toString().split('').map(Number)
+//     let isAscending=true
+//     for(j=0;j<digits.length;j++){
+//         if(digits[j]>digits[j+1]){
+            
+//                 isAscending=false;
+//                     break;
+                
+//             }
+//         }
+//         if(isAscending){
+//             Count++
+//         }
+//     }
+
+// console.log(Count)
+
+//finding odd numbers sum
+// var a=7631;
+// num="";
+// sum=0
+// var aStr=a.toString()
+// for(var i=0;i<aStr.length;i++){
+//     var digit=parseInt(aStr[i])
+//     if(digit%2!==0){
+//         num=num+digit
+//         sum=sum+digit
+//     }
+// }
+// console.log(num)
+// console.log(sum)
+
+//reverse a string
+var str="mounika bonagiri"
+var rev=" "
+for(var i=str.length-1;i>=0;i--){
+    rev+=str[i];
+    
+}
+console.log(`given ${str} is and the output is ${rev}`)
+//two inpts are same
+var str="good";
+var str1="GoOd"
+ if(str===str1.toLowerCase()){
+     console.log(`${str} and ${str1} are equal`)
+ }
+ else{
+     console.log(`${str} and ${str1} are not equal`)
+ }
+ //
+ var a="orange"
+var target="angore"
+ var sorteda=a.split('').sort().join('')
+  var sortedtarget=target.split('').sort().join('')
+//   return sorteda=== sortedtarget
+if(sorteda===sortedtarget){
+   console.log (`${a} can form ${target}`)
+}
+else{
+    console.log   (`${a} can not form ${target}`)
+}
+//palindrome or not
+var a="dad"
+var reverseda=a.split('').reverse().join('')
+if(a===reverseda){
+    console.log(`${a} is palindrome`)
+}else{
+    console.log(` {a}  is not a palindrome`)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

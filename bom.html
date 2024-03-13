@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btnopen{
+            border: 1px solid black;
+            height:20px;
+            width:150px;
+
+        }
+        /* #btnclose{
+            border: 1px solid black;
+            height:20px;
+            width:150px;
+
+        } */
+        /* #btnmove{
+            border: 1px solid black;
+            height:20px;
+            width:150px;
+        } */
+        #btnby{
+            border: 1px solid black;
+            height:20px;
+            width:150px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="btn">Open</button>
+    <button id="btn1">Close</button> -->
+
+    <button id="btnopen">Open</button>
+<!-- <button id="btnclose">Close</button> -->
+<!-- <button id="btnmove">Move</button> -->
+<button id="btnby">Moveby </button>
+    <script>
+
+      var btnopenn= document.getElementById("btnopen");
+      btnopenn.addEventListener("click",()=>{
+        window.open("https://www.geeksforgeeks.org/",'_blank',"width=100,height=100,top=100,left=800")
+        
+      });
+    //  var btnclosee= document.getElementById("btnclose");
+    // btnclosee.addEventListener("click",()=>{
+    //     newwindow.close();
+    //  })
+    // var btnmove=document.getElementById("btnmove");
+    // btnmove.addEventListener("click",()=>{
+    //     window.moveTo(500,100)
+    //     window.focus()
+
+    // })
+
+   var btnby= document.getElementById("btnby")
+   btnby.addEventListener("click",()=>{
+    window.moveBy(200,100)
+    window.focus()
+   })
+
+
+
+   
+
+
+   
+
+
+
+
+
+
+
+      
+    </script>
+</body>
+</html>
